@@ -27,3 +27,7 @@ plan:
 create-project:
     @-gcloud projects create ${GCP_PROJECT_ID}
     @gcloud config set project ${GCP_PROJECT_ID}
+
+# Get kubeconfig for GKE cluster
+kubeconfig:
+    @gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GCP_ZONE}
