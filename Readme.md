@@ -12,7 +12,4 @@ This configuration creates a minimal but production-ready GKE cluster with:
 
 To use this:
 
-- Replace "your-project-id" in terraform.tfvars with your actual GCP project ID
-- Run terraform init
-- Run terraform plan to review changes
-- Run terraform apply to create the cluster
+- See [Readme-GCP]()
