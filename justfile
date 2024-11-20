@@ -36,6 +36,14 @@ kubeconfig:
 destroy:
     @terraform destroy
 
+# Terraform 🧨 destroy with 🧨 auto approve
+destroy-y:
+    @terraform destroy -auto-approve
+
 # Terraform 🚀 apply
 apply:
     @terraform apply
+
+# Terraform 🚀 apply with 🚀 auto approve
+apply-y:
+    @terraform apply -auto-approve
