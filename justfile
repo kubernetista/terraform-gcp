@@ -35,3 +35,7 @@ kubeconfig:
 # Terraform 🧨 destroy
 destroy:
     @terraform destroy
+
+# Terraform 🚀 apply
+apply:
+    @terraform apply
