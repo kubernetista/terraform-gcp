@@ -2,7 +2,7 @@
 
 This configuration creates a minimal but production-ready GKE cluster with:
 
-- Single node pool with one preemptible e2-medium instance
+- Single (but configurable) node pool with one preemptible e2-medium (configurable) instance
 - Private cluster configuration
 - Workload Identity enabled
 - VPC-native networking
