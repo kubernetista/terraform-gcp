@@ -11,15 +11,15 @@ help:
 create-tfvars:
     @envsubst < terraform.tfvars.template > terraform.tfvars
 
-# Initialize terraform
+# Initialize Terraform
 init:
     @terraform init
 
-# Initialize and upgrade terraform
+# Initialize and upgrade Terraform
 init-upgrade:
     @terraform init -upgrade
 
-# Plan terraform
+# Terraform 📝 plan
 plan:
     @terraform plan
 
@@ -31,3 +31,7 @@ create-project:
 # Get kubeconfig for GKE cluster
 kubeconfig:
     @gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GCP_ZONE}
+
+# Terraform 🧨 destroy
+destroy:
+    @terraform destroy
