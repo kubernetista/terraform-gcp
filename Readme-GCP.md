@@ -5,7 +5,7 @@ Steps required to set up the project and deploy to GCP
 1. Create a new project and set it as default:
 
     ```sh
-    export PROJECT_ID="nuvola-gcp-2"
+    export GCP_PROJECT_ID="nuvola-gcp-2"
 
     export GKE_CLUSTER_NAME="nuvola-cluster"
     export GKE_CLUSTER_ENV="dev"
