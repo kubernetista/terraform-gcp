@@ -1,0 +1,27 @@
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Terraform GCP Service Account key
+terraform-sa-key.json
+
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Credentials
+*.json
+credentials.json
+terraform-sa-key.json
+
+# Local .terraform directories
+**/.terraform/*
+
+# Crash log files
+crash.log
+crash.*.log
