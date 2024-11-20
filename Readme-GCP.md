@@ -5,19 +5,19 @@ Steps required to set up the project and deploy to GCP
 1. Create a new project and set it as default:
 
     ```sh
-    export GCP_PROJECT_ID="nuvola-gcp-2"
+    export GKE_PROJECT_ID="nuvola-gcp-2"
 
     export GKE_CLUSTER_NAME="nuvola-cluster"
     export GKE_CLUSTER_ENV="dev"
-    #export GCP_MACHINE_TYPE="e2-medium"
-    export GCP_MACHINE_TYPE="e2-standard-2"
+    #export GKE_MACHINE_TYPE="e2-medium"
+    export GKE_MACHINE_TYPE="e2-standard-2"
     export GKE_NODE_COUNT=1
 
-    export GCP_REGION="europe-west8"   # Italy
-    export GCP_ZONE="europe-west8-a"
+    export GKE_REGION="europe-west8"   # Italy
+    export GKE_ZONE="europe-west8-a"
 
-    #export GCP_REGION="europe-west4"  # NL
-    #export GCP_ZONE="europe-west4-b"
+    #export GKE_REGION="europe-west4"  # NL
+    #export GKE_ZONE="europe-west4-b"
 
     # Create new project
     gcloud projects create ${PROJECT_ID}
@@ -113,7 +113,7 @@ Steps required to set up the project and deploy to GCP
 
     ```sh
     # Save the kubeconfig
-    gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GCP_ZONE}
+    gcloud container clusters get-credentials ${GKE_CLUSTER_NAME} --region ${GKE_ZONE}
 
     # Verify access with kubectl
     kubectl get po -A
