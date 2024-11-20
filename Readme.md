@@ -12,4 +12,4 @@ This configuration creates a minimal but production-ready GKE cluster with:
 
 To use this:
 
-- See [Readme-GCP]()
+- See [Readme-GCP](Readme-GCP.md)
